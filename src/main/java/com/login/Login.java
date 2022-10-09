@@ -55,7 +55,7 @@ public class Login extends HttpServlet {
 				out.println("<h2>Successfully Logged In. as " +myRole +"</h2>");
 				if(myRole == "Admin") {
 					out.println("<form action='getAllEmps'><input type=\"submit\" value=\"Get All Emps\"></form>");
-					out.println("<form action='getEmp'><input type=\"submit\" value=\"Search Emp\"></form>");					
+					out.println("<a href='EmpSearch.html'>Search Emp</a>");					
 				}else {
 					
 				}
