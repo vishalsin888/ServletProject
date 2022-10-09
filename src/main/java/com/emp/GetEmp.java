@@ -44,7 +44,7 @@ public class GetEmp extends HttpServlet {
 			}
 			out.println("</table>");
 			out.println("<h1>Total "+rowCount+" Records</h1>");
-			out.println("<a href='EmpSearch.html'></a>");
+			out.println("<a href='EmpSearch.html'>Go Back</a>");
 				
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block

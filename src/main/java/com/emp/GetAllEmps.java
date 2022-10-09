@@ -35,9 +35,7 @@ public class GetAllEmps extends HttpServlet {
 		try {
 			pst = conn.prepareStatement(query);
 			ResultSet result = pst.executeQuery();
-			if(result.next()) {
-				out.println("<table><tr><th>Name</th><th>Email</th><th>Password</th><th>Role</th></tr>");				
-			}
+			out.println("<table><tr><th>Name</th><th>Email</th><th>Password</th><th>Role</th></tr>");				
 			while(result.next()) {
 				out.println("<tr><td>"+result.getString(1)+"</td><td>"+result.getString(2)+"</td><td>"+result.getString(3)+"</td><td>"+result.getString(4)+"</td></tr>");
 			}
